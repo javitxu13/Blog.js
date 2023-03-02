@@ -11,6 +11,7 @@
         }
     </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section id="seccion_lista">
@@ -23,18 +24,20 @@
         
     </section>
     <section id="seccion_blog">
-        <h1>Blog<i class="fa fa-blind"></i></h1>
+        <h1 class="encabezado">Blog</h1>
         <section id="blog_form_section">
             <form action="" id="blog_form">
                 <fieldset>
-                    <legend>Crear un nuevo post</legend>
-                    <label for="titulo">Titulo</label>
+                    <legend class="post">Crear un nuevo post</legend>
+                    <label class="titulo" for="titulo">Titulo</label>
+                    <br><br>
                     <input type="text" id="titulo" name="titulo">
                     <br> <br>
-                    <label for="contenido">Contenido</label>
+                    <label class="contenido" for="contenido">Contenido</label>
+                    <br> <br>
                     <textarea name="contenido" id="contenido" cols="30" rows="10" placeholder="Escribe algo..."></textarea>
                     <br>
-                    <input id="cargar" type="submit" value="Crear">
+                    <input  class="boton" id="cargar" type="submit" value="Crear">
                 </fieldset>
             </form>
         </section>
